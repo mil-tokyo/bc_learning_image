@@ -5,11 +5,7 @@
 """
 
 import sys
-
-sys.path.append('/home/harada/local/envs/chainer/site-packages/')
-
 import os
-import datetime
 import chainer
 
 import opts
@@ -46,9 +42,7 @@ def train(opt, trial):
 
     if opt.save != 'None':
         chainer.serializers.save_npz(
-            os.path.join(opt.save, 'model_trial{}.npz'.format(datetime.datetime.now())), model)
-        chainer.serializers.save_npz(
-            os.path.join(opt.save, 'optimizer_trial{}.npz'.format(datetime.datetime.now())), optimizer)
+            os.path.join(opt.save, 'model_trial{}.npz'.format(trial)), model)
 
 
 if __name__ == '__main__':
