@@ -3,6 +3,8 @@ BC learning for images
 
 Implementation of [Between-class Learning for Image Classification](https://arxiv.org/abs/1711.10284) by Yuji Tokozume, Yoshitaka Ushiku, and Tatsuya Harada.
 
+Our preliminary experimental results on CIFAR-10 and ImageNet-1K were already presented in ILSVRC2017 on July 26, 2017.
+
 #### Between-class (BC) learning:
 - We generate between-class examples by mixing two training examples belonging to different classes with a random ratio.
 - We then input the mixed data to the model and
